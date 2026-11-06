@@ -565,3 +565,8 @@ filter:brightness(1.4);
 transform:scale(1.12);
 }
 }
+.highscoretitle::before {content:"HIGH SCORE";}
+.highscorelabel::before {content:"WORDS";}
+.arcadeinfo1 .arcadeinfolabel::after {content:"LEVEL";}
+.arcadeinfo2 .arcadeinfolabel::after {content:"PLAYERS";}
+.arcadestarttext::before {content:"PRESS START";}
