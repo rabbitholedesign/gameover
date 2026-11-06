@@ -299,15 +299,12 @@ color:#A58BEB;
 .arcadedialogue {
 flex:1;
 min-width:0;
-height:250px;
+height:400px;
 min-height:0;
-padding:35px 22px 22px;
 box-sizing:border-box;
 position:relative;
 isolation:isolate;
-overflow-y:auto;
-overflow-x:hidden;
-scrollbar-width:none;
+overflow:hidden;
 background:#100B27;
 border:2px solid #7166C8;
 border-top:0;
@@ -318,7 +315,16 @@ font-size:13px;
 line-height:1.7;
 }
 
-.arcadedialogue::-webkit-scrollbar {
+.arcadedialoguecontent {
+height:100%;
+box-sizing:border-box;
+padding:35px 22px 22px;
+overflow-y:auto;
+overflow-x:hidden;
+scrollbar-width:none;
+}
+
+.arcadedialoguecontent::-webkit-scrollbar {
 display:none;
 }
 
@@ -578,6 +584,3 @@ transform:scale(1.12);
 .arcadeinfo1 .arcadeinfolabel::after {content:"LEVEL";}
 .arcadeinfo2 .arcadeinfolabel::after {content:"PLAYERS";}
 .arcadestarttext::before {content:"PRESS START";}
-.arcadedialogue::-webkit-scrollbar {
-display:none;
-}
