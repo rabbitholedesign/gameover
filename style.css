@@ -319,11 +319,12 @@ line-height:1.7;
 
 .arcadedialoguecontent {
 flex:1 1 0;
+height:0;
 min-height:0;
 min-width:0;
 padding:35px 22px 22px;
 box-sizing:border-box;
-overflow-y:auto;
+overflow-y:scroll;
 overflow-x:hidden;
 scrollbar-width:none;
 }
@@ -331,6 +332,7 @@ scrollbar-width:none;
 .arcadedialoguecontent::-webkit-scrollbar {
 display:none;
 }
+
 .arcadedialogue > .arcadequote {
 flex-shrink:0;
 }
