@@ -304,8 +304,8 @@ min-height:0;
 box-sizing:border-box;
 position:relative;
 isolation:isolate;
-display:flex;
-flex-direction:column;
+display:grid;
+grid-template-rows:auto minmax(0,1fr) auto;
 overflow:hidden;
 background:#100B27;
 border:2px solid #7166C8;
@@ -318,23 +318,17 @@ line-height:1.7;
 }
 
 .arcadedialoguecontent {
-flex:1 1 0;
-height:0;
 min-height:0;
 min-width:0;
 padding:35px 22px 22px;
 box-sizing:border-box;
-overflow-y:scroll;
+overflow-y:auto;
 overflow-x:hidden;
 scrollbar-width:none;
 }
 
 .arcadedialoguecontent::-webkit-scrollbar {
 display:none;
-}
-
-.arcadedialogue > .arcadequote {
-flex-shrink:0;
 }
 
 .arcadedialogue::before {
