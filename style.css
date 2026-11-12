@@ -334,7 +334,7 @@ display:none;
 .arcadedialogue::before {
 content:"";
 position:absolute;
-top:0;
+top:-5;
 left:0;
 right:0;
 height:18px;
@@ -358,7 +358,7 @@ clip-path:polygon(
 .arcadedialogue::after {
 content:"";
 position:absolute;
-top:4px;
+top:-1px;
 left:4px;
 right:4px;
 height:12px;
