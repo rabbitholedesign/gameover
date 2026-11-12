@@ -367,7 +367,7 @@ clip-path:polygon(
 
 .arcadedialogue {
 width:100%;
-height:400px;
+height:500px;
 min-height:0;
 min-width:0;
 box-sizing:border-box;
@@ -390,7 +390,7 @@ line-height:1.7;
 .arcadedialoguecontent {
 min-height:0;
 min-width:0;
-padding:35px 22px 22px;
+padding:25px 22px 22px;
 box-sizing:border-box;
 overflow-y:auto;
 overflow-x:hidden;
