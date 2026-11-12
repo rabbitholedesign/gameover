@@ -320,7 +320,7 @@ line-height:1.7;
 .arcadedialoguecontent {
 min-height:0;
 min-width:0;
-padding:35px 22px 22px;
+padding:45px 22px 22px;
 box-sizing:border-box;
 overflow-y:auto;
 overflow-x:hidden;
@@ -334,7 +334,7 @@ display:none;
 .arcadedialogue::before {
 content:"";
 position:absolute;
-top:-5;
+top:0;
 left:0;
 right:0;
 height:18px;
@@ -358,7 +358,7 @@ clip-path:polygon(
 .arcadedialogue::after {
 content:"";
 position:absolute;
-top:-1px;
+top:4px;
 left:4px;
 right:4px;
 height:12px;
