@@ -320,8 +320,6 @@ line-height:1.7;
 .arcadedialoguecontent {
 min-height:0;
 min-width:0;
-position:relative;
-z-index:0;
 padding:35px 22px 22px;
 box-sizing:border-box;
 overflow-y:auto;
@@ -332,11 +330,9 @@ scrollbar-width:none;
 .arcadedialoguecontent::-webkit-scrollbar {
 display:none;
 }
-
 .arcadedialogue::before {
 content:"";
 position:absolute;
-z-index:1;
 top:0;
 left:0;
 right:0;
@@ -361,7 +357,6 @@ clip-path:polygon(
 .arcadedialogue::after {
 content:"";
 position:absolute;
-z-index:2;
 top:4px;
 left:4px;
 right:4px;
