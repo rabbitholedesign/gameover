@@ -296,11 +296,79 @@ letter-spacing:3px;
 color:#A58BEB;
 }
 
-.arcadedialogue {
+/* REAGBOX KÜLSŐ KERETE */
+
+.arcadedialoguewrapper {
 flex:1;
 min-width:0;
+position:relative;
+}
+
+/* KÜLÖNÁLLÓ DÍSZÍTŐELEM */
+
+.arcadedecoration {
+position:absolute;
+top:-9px;
+left:0;
+right:0;
+height:18px;
+z-index:2;
+pointer-events:none;
+}
+
+.arcadedecoration::before {
+content:"";
+position:absolute;
+top:0;
+left:0;
+right:0;
+height:18px;
+background:linear-gradient(90deg,#7166C8 0%,#A45BCB 30%,#E58BCB 50%,#A45BCB 70%,#7166C8 100%);
+clip-path:polygon(
+0 45%,
+5% 45%,
+5% 0,
+38% 0,
+41% 55%,
+59% 55%,
+62% 0,
+95% 0,
+95% 45%,
+100% 45%,
+100% 100%,
+0 100%
+);
+}
+
+.arcadedecoration::after {
+content:"";
+position:absolute;
+top:4px;
+left:4px;
+right:4px;
+height:12px;
+background:#100B27;
+clip-path:polygon(
+0 45%,
+5% 45%,
+5% 0,
+38% 0,
+41% 55%,
+59% 55%,
+62% 0,
+95% 0,
+95% 45%,
+100% 45%,
+100% 100%,
+0 100%
+);
+}
+
+.arcadedialogue {
+width:100%;
 height:400px;
 min-height:0;
+min-width:0;
 box-sizing:border-box;
 position:relative;
 isolation:isolate;
@@ -329,53 +397,6 @@ scrollbar-width:none;
 
 .arcadedialoguecontent::-webkit-scrollbar {
 display:none;
-}
-.arcadedialogue::before {
-content:"";
-position:absolute;
-top:0;
-left:0;
-right:0;
-height:18px;
-background:linear-gradient(90deg,#7166C8 0%,#A45BCB 30%,#E58BCB 50%,#A45BCB 70%,#7166C8 100%);
-clip-path:polygon(
-0 45%,
-5% 45%,
-5% 0,
-38% 0,
-41% 55%,
-59% 55%,
-62% 0,
-95% 0,
-95% 45%,
-100% 45%,
-100% 100%,
-0 100%
-);
-}
-
-.arcadedialogue::after {
-content:"";
-position:absolute;
-top:4px;
-left:4px;
-right:4px;
-height:12px;
-background:#100B27;
-clip-path:polygon(
-0 45%,
-5% 45%,
-5% 0,
-38% 0,
-41% 55%,
-59% 55%,
-62% 0,
-95% 0,
-95% 45%,
-100% 45%,
-100% 100%,
-0 100%
-);
 }
 
 .arcadefooter {
@@ -581,6 +602,7 @@ filter:brightness(1.4);
 transform:scale(1.12);
 }
 }
+
 .highscoretitle::before {content:"HIGH SCORE";}
 .highscorelabel::before {content:"WORDS";}
 .arcadeinfo1 .arcadeinfolabel::after {content:"LEVEL";}
